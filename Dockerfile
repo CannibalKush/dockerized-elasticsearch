@@ -6,3 +6,5 @@ COPY --chown=elasticsearch:elasticsearch elasticsearch.yml /usr/share/elasticsea
 COPY --chown=elasticsearch:elasticsearch certificates/ /usr/share/elasticsearch/config/
 COPY certificates/sg_config.yml /usr/share/elasticsearch/plugins/search-guard-6/sgconfig/sg_config.yml
 COPY certificates/sg_roles.yml /usr/share/elasticsearch/plugins/search-guard-6/sgconfig/sg_roles.yml
+
+EXPOSE 9300
